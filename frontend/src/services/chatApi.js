@@ -1,11 +1,14 @@
 export async function sendMessage(message, sessionId) {
-  const response = await fetch("http://localhost:3000/chat/message", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ message, sessionId }),
-  });
+  const response = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/chat/message`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ message, sessionId }),
+    }
+  );
 
   if (!response.ok) {
     throw new Error("Failed to send message");
@@ -15,7 +18,7 @@ export async function sendMessage(message, sessionId) {
 }
 export async function fetchChatHistory(sessionId) {
   const response = await fetch(
-    `http://localhost:3000/chat/history/${sessionId}`
+    `${import.meta.env.VITE_API_BASE_URL}/chat/history/${sessionId}`
   );
 
   if (!response.ok) {

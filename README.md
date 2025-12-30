@@ -6,6 +6,19 @@ The application simulates a customer support agent for an e-commerce store and r
 
 ---
 
+## 📸 Screenshots
+
+### Chat Interface
+
+![Spur Chat Interface](./public/spur.png)
+
+## 🌐 Live Demo
+
+🔗 **Frontend (Live Application):**  
+https://spur-chat-assessment.vercel.app/
+
+The live demo showcases the AI-powered chat interface where users can interact with the support assistant in real time.
+
 ## 🎯 Purpose of This Project
 
 This project was built to demonstrate:

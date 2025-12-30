@@ -5,7 +5,14 @@ import chatRoutes from "./routes/chat.route";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://spur-chat-assessment.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 connectDB();

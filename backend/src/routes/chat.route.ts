@@ -1,0 +1,12 @@
+import { Router } from "express";
+import {
+  handleChatMessage,
+  getChatHistory,
+} from "../controllers/chat.controller";
+
+const router = Router();
+
+router.post("/message", handleChatMessage);
+router.get("/history/:sessionId", getChatHistory);
+
+export default router;

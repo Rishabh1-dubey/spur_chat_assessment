@@ -10,7 +10,7 @@ The application simulates a customer support agent for an e-commerce store and r
 
 ### Chat Interface
 
-![Spur Chat Interface](./public/spur.png)
+![Spur Chat Interface](./assets/spur.png)
 
 ## 🌐 Live Demo
 

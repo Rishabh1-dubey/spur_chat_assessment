@@ -8,9 +8,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// IMPORTANT: connect DB, but DO NOT listen
 connectDB();
 
 app.use("/chat", chatRoutes);
+
+app.get("/", (_req, res) => {
+  res.send("Backend is running");
+});
 
 export default app;

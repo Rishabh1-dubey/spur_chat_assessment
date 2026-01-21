@@ -14,7 +14,6 @@ app.use(
   }),
 );
 app.use(express.json());
-connectDB();
 
 app.use("/chat", chatRoutes);
 
